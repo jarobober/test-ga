@@ -20,30 +20,30 @@
 <body>
   aaa
   <script type="text/javascript">
-    // window.onload = setTimeout(function () {
+     window.onload = setTimeout(function () {
 
-    //   const parameter = window.location.search;
-    //   const partUrl = parameter.substring(1)
+      const parameter = window.location.search;
+      const partUrl = parameter.substring(1)
 
-    //   const redirectUrl = `livemarket://live.market/${partUrl}`;
+      const redirectUrl = `livemarket://live.market/${partUrl}`;
 
-    //   if (/Android/i.test(navigator.userAgent)) {
-    //     window.location = redirectUrl;
+      if (/Android/i.test(navigator.userAgent)) {
+        window.location = redirectUrl;
 
-    //     setTimeout(function () {
-    //       window.location = "https://play.google.com/store/apps/details?id=market.live.app";
-    //     }, 500);
-    //   } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    //     window.location = redirectUrl;
+        setTimeout(function () {
+          window.location = "https://play.google.com/store/apps/details?id=market.live.app";
+        }, 500);
+      } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        window.location = redirectUrl;
 
-    //     setTimeout(function () {
-    //       window.location = "https://apps.apple.com/pl/app/live-market/id1544735595";
-    //     }, 500);
-    //   } else {
-    //     window.location = "https://live.market/";
-    //   }
+        setTimeout(function () {
+          window.location = "https://apps.apple.com/pl/app/live-market/id1544735595";
+        }, 500);
+      } else {
+        window.location = "https://live.market/";
+      }
 
-    // }, 500);
+    }, 500);
 
   </script>
 </body>
